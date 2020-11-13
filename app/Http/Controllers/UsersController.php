@@ -33,5 +33,9 @@ class UsersController extends Controller
 
         return response(['data' => $data, 'message' => 'Account created successfully!', 'status' => true]);
     }  
+    
+    public function users(){
+        return User::get();
+    }
      
 }
